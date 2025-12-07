@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: f3fbe703fa434e344ae99e9f82a88ddf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4901336149743010589
+    second: Heart_red_0
+  - first:
+      213: 4050003899323289586
+    second: Heart_red_1
+  - first:
+      213: -8691652391869117292
+    second: Heart_red_2
+  - first:
+      213: 4710655441906602917
+    second: Heart_red_3
+  - first:
+      213: 3794232938847437399
+    second: Heart_red_4
+  - first:
+      213: 7603816892437281369
+    second: Heart_red_5
+  - first:
+      213: 2975772775294986907
+    second: Heart_red_6
+  - first:
+      213: -89740850633309386
+    second: Heart_red_7
+  - first:
+      213: 366459912217563073
+    second: Heart_red_8
+  - first:
+      213: 4280517125676458657
+    second: Heart_red_9
+  - first:
+      213: -7173495243914773930
+    second: Heart_red_10
+  - first:
+      213: 8743945095134950887
+    second: Heart_red_11
+  - first:
+      213: 1199893760878217217
+    second: Heart_red_12
+  - first:
+      213: 2587542334934702243
+    second: Heart_red_13
+  - first:
+      213: -2884964619548147720
+    second: Heart_red_14
+  - first:
+      213: 4421437078902376938
+    second: Heart_red_15
+  - first:
+      213: 5615086440681681727
+    second: Heart_red_16
+  - first:
+      213: -8210994705464865728
+    second: Heart_red_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Heart_red_0
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 3455
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec79cd7db4fafbb0800000000000000
+      internalID: -4901336149743010589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_1
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 3455
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff8c1ea611843830800000000000000
+      internalID: 4050003899323289586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_2
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 3455
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c877f233c016780800000000000000
+      internalID: -8691652391869117292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2655
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a39a129a2c9f5140800000000000000
+      internalID: 4710655441906602917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2431
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752861351c2d7a430800000000000000
+      internalID: 3794232938847437399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_5
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 2655
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ab6da4d2f268960800000000000000
+      internalID: 7603816892437281369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_6
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 2655
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a6cb3a2911c4920800000000000000
+      internalID: 2975772775294986907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_7
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 2431
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633092cfb2d21cef0800000000000000
+      internalID: -89740850633309386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_8
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 2655
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf062c395de51500800000000000000
+      internalID: 366459912217563073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_9
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 2655
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2ebea85a3776b30800000000000000
+      internalID: 4280517125676458657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_10
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 2431
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a718c1510a27c90800000000000000
+      internalID: -7173495243914773930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_11
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 2655
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5b9039cbbb85970800000000000000
+      internalID: 8743945095134950887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1407
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1088a59a401e6a010800000000000000
+      internalID: 1199893760878217217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_13
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1407
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a851135b0cc8e320800000000000000
+      internalID: 2587542334934702243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_14
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 1407
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff3346b6fb86f7d0800000000000000
+      internalID: -2884964619548147720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 383
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae987b4f8991c5d30800000000000000
+      internalID: 4421437078902376938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_16
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 383
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33b1f72e5bcced40800000000000000
+      internalID: 5615086440681681727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_red_17
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 383
+        width: 482
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c4720b1dfac0e80800000000000000
+      internalID: -8210994705464865728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Heart_red_0: -4901336149743010589
+      Heart_red_1: 4050003899323289586
+      Heart_red_10: -7173495243914773930
+      Heart_red_11: 8743945095134950887
+      Heart_red_12: 1199893760878217217
+      Heart_red_13: 2587542334934702243
+      Heart_red_14: -2884964619548147720
+      Heart_red_15: 4421437078902376938
+      Heart_red_16: 5615086440681681727
+      Heart_red_17: -8210994705464865728
+      Heart_red_2: -8691652391869117292
+      Heart_red_3: 4710655441906602917
+      Heart_red_4: 3794232938847437399
+      Heart_red_5: 7603816892437281369
+      Heart_red_6: 2975772775294986907
+      Heart_red_7: -89740850633309386
+      Heart_red_8: 366459912217563073
+      Heart_red_9: 4280517125676458657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
