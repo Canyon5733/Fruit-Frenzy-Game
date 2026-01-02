@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
     public float knockbackLength, knockbackSpeed;
     private float knockbackCounter;
+
+
     void Start()
     {
         
@@ -94,5 +96,14 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("isKnockingBack");
 
         knockbackCounter = knockbackLength;
+    }    
+
+    public void BouncePlayer(float bounceAmount)
+    {
+        theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, bounceAmount);
+
+        canDoubleJump = true;
+
+        anim.SetBool("isGrounded", true);
     }    
 }
