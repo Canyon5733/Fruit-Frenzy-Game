@@ -3168,6 +3168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 1531492390885539399, guid: 4bfa1324cfecb01478c2e9f60514b8e8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3042324704349833517, guid: 4bfa1324cfecb01478c2e9f60514b8e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.85
@@ -3208,9 +3212,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3223502823258706438, guid: 4bfa1324cfecb01478c2e9f60514b8e8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3413458255115924563, guid: 4bfa1324cfecb01478c2e9f60514b8e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134668780840455328, guid: 4bfa1324cfecb01478c2e9f60514b8e8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236617201424877483, guid: 4bfa1324cfecb01478c2e9f60514b8e8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

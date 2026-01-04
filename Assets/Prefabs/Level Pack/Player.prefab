@@ -176,7 +176,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 4
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0ac3530e5bc26fa4aa5db5bd7c1b7833, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -241,7 +241,7 @@ MonoBehaviour:
   jumpForce: 15
   runSpeed: 12
   groundCheckPoint: {fileID: 7037671385573827511}
-  groundCheckRadius: 0.64
+  groundCheckRadius: 0.65
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
