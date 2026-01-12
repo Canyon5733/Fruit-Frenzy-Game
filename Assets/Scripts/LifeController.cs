@@ -39,14 +39,23 @@ public class LifeController : MonoBehaviour
         thePlayer.gameObject.SetActive(false);
         thePlayer.theRB.linearVelocity = Vector2.zero;
         currentLives--;
-        if (currentLives > 0)
+        
+        // Kiểm tra checkpoint có bị chìm trong lava không
+        bool checkpointSubmerged = false;
+        if (RisingLava.instance != null)
         {
+            checkpointSubmerged = RisingLava.instance.IsCheckpointSubmerged();
+        }
+        
+        if (currentLives > 0 && !checkpointSubmerged)
+        {
+            // Còn mạng VÀ checkpoint chưa bị chìm → Respawn
             StartCoroutine(RespawnCo());
         }
         else
         {
+            // Hết mạng HOẶC checkpoint bị chìm → Game Over
             currentLives = 0;
-
             StartCoroutine(GameOverCo());
         }
         UpdateDisplay();

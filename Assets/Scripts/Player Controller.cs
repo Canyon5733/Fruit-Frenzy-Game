@@ -23,7 +23,11 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+        // QUAN TRỌNG: Freeze rotation để player không bị xoay trên moving platforms
+        if (theRB != null)
+        {
+            theRB.freezeRotation = true;
+        }
     }
 
 
