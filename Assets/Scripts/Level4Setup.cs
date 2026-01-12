@@ -4,11 +4,15 @@ public class Level4Setup : MonoBehaviour
 {
     [Header("Level 4 - Tower Settings")]
     public bool disableKillPlane = false;    // Giữ Kill Plane nhưng đặt dưới lava
-    public float killPlaneNewY = -15f;       // Đặt dưới vị trí ban đầu của lava
+    public float killPlaneNewY = -25f;       // Đặt dưới vị trí ban đầu của lava
+    
+    [Header("Lava Settings")]
+    public float lavaStartY = -15f;          // Vị trí bắt đầu của lava (dưới player)
     
     void Awake()
     {
         SetupKillPlane();
+        SetupLava();
     }
     
     void SetupKillPlane()
@@ -38,6 +42,41 @@ public class Level4Setup : MonoBehaviour
         else
         {
             Debug.Log("ℹ️ Không tìm thấy Kill Plane");
+        }
+    }
+    
+    void SetupLava()
+    {
+        // Tìm Lava
+        if (RisingLava.instance != null)
+        {
+            // Di chuyển lava xuống vị trí bắt đầu
+            RisingLava.instance.transform.position = new Vector3(
+                RisingLava.instance.transform.position.x,
+                lavaStartY,
+                RisingLava.instance.transform.position.z
+            );
+            Debug.Log("✅ Lava đã được đặt ở Y = " + lavaStartY);
+        }
+        else
+        {
+            // Tìm bằng tên nếu instance chưa có
+            GameObject lava = GameObject.Find("Lava");
+            if (lava == null) lava = GameObject.Find("Rising Lava");
+            
+            if (lava != null)
+            {
+                lava.transform.position = new Vector3(
+                    lava.transform.position.x,
+                    lavaStartY,
+                    lava.transform.position.z
+                );
+                Debug.Log("✅ Lava đã được đặt ở Y = " + lavaStartY);
+            }
+            else
+            {
+                Debug.Log("⚠️ Không tìm thấy Lava object");
+            }
         }
     }
 }

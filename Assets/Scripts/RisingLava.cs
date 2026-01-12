@@ -5,6 +5,10 @@ public class RisingLava : MonoBehaviour
 {
     public static RisingLava instance;
     
+    [Header("=== KÍCH THƯỚC LAVA ===")]
+    public float lavaWidth = 50f;            // Chiều rộng lava
+    public float lavaHeight = 10f;           // Chiều cao lava
+    
     [Header("=== CÀI ĐẶT CHÍNH ===")]
     public float riseSpeed = 0.5f;           // Tốc độ dâng lên
     public float startDelay = 3f;            // Chờ bao lâu mới bắt đầu dâng
@@ -35,12 +39,67 @@ public class RisingLava : MonoBehaviour
         currentSpeed = riseSpeed;
         baseY = transform.position.y;
         
-        // Tự động setup collider
+        Debug.Log("🔥 RisingLava Start() - Position: " + transform.position);
+        
+        // Tự động setup collider với size đã chỉnh
         BoxCollider2D col = GetComponent<BoxCollider2D>();
         if (col != null)
         {
             col.isTrigger = true;
+            col.size = new Vector2(lavaWidth, lavaHeight);
+            col.offset = Vector2.zero; // Căn giữa collider
         }
+        
+        // Setup visual - tạo mới nếu chưa có
+        SetupVisual();
+    }
+    
+    void SetupVisual()
+    {
+        Transform visual = null;
+        SpriteRenderer sr = null;
+        
+        // Tìm hoặc tạo visual child
+        if (transform.childCount > 0)
+        {
+            visual = transform.GetChild(0);
+            sr = visual.GetComponent<SpriteRenderer>();
+        }
+        else
+        {
+            // Tạo visual child mới
+            GameObject visualObj = new GameObject("Lava Visual");
+            visualObj.transform.SetParent(transform);
+            visual = visualObj.transform;
+            Debug.Log("🔥 Đã tạo Lava Visual child");
+        }
+        
+        // Đảm bảo có SpriteRenderer
+        if (sr == null)
+        {
+            sr = visual.gameObject.AddComponent<SpriteRenderer>();
+            Debug.Log("🔥 Đã thêm SpriteRenderer");
+        }
+        
+        // Tạo sprite đơn giản nếu chưa có
+        if (sr.sprite == null)
+        {
+            Texture2D tex = new Texture2D(1, 1);
+            tex.SetPixel(0, 0, Color.white);
+            tex.Apply();
+            sr.sprite = Sprite.Create(tex, new Rect(0, 0, 1, 1), new Vector2(0.5f, 0.5f), 1f);
+            Debug.Log("🔥 Đã tạo sprite cho Lava");
+        }
+        
+        // Set màu lava (cam/đỏ)
+        sr.color = new Color(1f, 0.35f, 0.1f, 0.9f);
+        sr.sortingOrder = 10;
+        
+        // Căn giữa và scale
+        visual.localPosition = Vector3.zero;
+        visual.localScale = new Vector3(lavaWidth, lavaHeight, 1f);
+        
+        Debug.Log("🔥 Lava Visual setup xong! Size: " + lavaWidth + " x " + lavaHeight);
     }
     
     // Kill player khi chạm lava (lần đầu vào)
@@ -80,6 +139,7 @@ public class RisingLava : MonoBehaviour
             if (timer >= startDelay)
             {
                 isRising = true;
+                Debug.Log("🔥 Lava bắt đầu dâng lên! Speed = " + currentSpeed);
             }
             return;
         }
@@ -92,25 +152,23 @@ public class RisingLava : MonoBehaviour
         }
         
         // Di chuyển lava lên
-        if (transform.position.y < maxHeight)
+        if (baseY < maxHeight)
         {
             baseY += currentSpeed * Time.deltaTime;
+            
+            // Hiệu ứng sóng nhấp nhô
+            float waveOffset = 0f;
+            if (enableWaveEffect)
+            {
+                waveOffset = Mathf.Sin(Time.time * waveSpeed) * waveHeight;
+            }
+            
+            transform.position = new Vector3(
+                transform.position.x,
+                baseY + waveOffset,
+                transform.position.z
+            );
         }
-        
-        // Hiệu ứng sóng nhấp nhô
-        float waveOffset = 0f;
-        if (enableWaveEffect)
-        {
-            waveOffset = Mathf.Sin(Time.time * waveSpeed) * waveHeight;
-        }
-        
-        transform.position = new Vector3(
-            transform.position.x,
-            baseY + waveOffset,
-            transform.position.z
-        );
-        
-        // KHÔNG kiểm tra liên tục nữa - chỉ kiểm tra khi respawn
     }
     
     // Được gọi từ LifeController khi player chết
@@ -148,15 +206,19 @@ public class RisingLava : MonoBehaviour
     // Vẽ Gizmos trong Editor
     private void OnDrawGizmos()
     {
-        // Vẽ lava hiện tại (cam)
+        // Vẽ lava hiện tại (cam) với size đúng
         Gizmos.color = new Color(1f, 0.3f, 0f, 0.7f);
         Vector3 lavaPos = transform.position;
-        Gizmos.DrawCube(lavaPos, new Vector3(30f, 2f, 1f));
+        Gizmos.DrawCube(lavaPos, new Vector3(lavaWidth, lavaHeight, 1f));
+        
+        // Vẽ viền lava
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(lavaPos, new Vector3(lavaWidth, lavaHeight, 1f));
         
         // Vẽ max height (đỏ)
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.yellow;
         Vector3 maxPos = new Vector3(transform.position.x, maxHeight, 0f);
-        Gizmos.DrawLine(maxPos - Vector3.right * 15f, maxPos + Vector3.right * 15f);
+        Gizmos.DrawLine(maxPos - Vector3.right * (lavaWidth / 2f), maxPos + Vector3.right * (lavaWidth / 2f));
         Gizmos.DrawWireSphere(maxPos, 0.5f);
     }
 }
