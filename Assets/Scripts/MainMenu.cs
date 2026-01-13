@@ -4,13 +4,11 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string firstLevel;
+    public string tutorial;
 
     public int startingLives = 3, startingFruits = 0;
 
     public GameObject continueButton;
-    
-    [Header("Level Select Panel")]
-    public GameObject levelSelectPanel;
     
     void Start()
     {
@@ -20,15 +18,8 @@ public class MainMenu : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
-        
-        // Ẩn Level Select panel lúc đầu
-        if (levelSelectPanel != null)
-        {
-            levelSelectPanel.SetActive(false);
-        }
     }
 
-    // Update is called once per frame
     void Update()
     {
 #if UNITY_EDITOR
@@ -58,54 +49,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(PlayerPrefs.GetString("currentLevel"));
     }
     
-    // ========== LEVEL SELECT ==========
-    
-    public void ShowLevelSelect()
+    public void Tutorial()
     {
-        if (levelSelectPanel != null)
-        {
-            levelSelectPanel.SetActive(true);
-        }
-    }
-    
-    public void HideLevelSelect()
-    {
-        if (levelSelectPanel != null)
-        {
-            levelSelectPanel.SetActive(false);
-        }
-    }
-    
-    public void LoadLevel1()
-    {
-        StartNewGameAndLoadLevel("Level1");
-    }
-    
-    public void LoadLevel2()
-    {
-        StartNewGameAndLoadLevel("Level2");
-    }
-    
-    public void LoadLevel3()
-    {
-        StartNewGameAndLoadLevel("Level3");
-    }
-    
-    public void LoadLevel4()
-    {
-        StartNewGameAndLoadLevel("Level4");
-    }
-    
-    public void LoadBossLevel()
-    {
-        StartNewGameAndLoadLevel("BossLevel");
-    }
-    
-    private void StartNewGameAndLoadLevel(string levelName)
-    {
-        InfoTracker.instance.currentLives = startingLives;
-        InfoTracker.instance.currentFruits = startingFruits;
-        InfoTracker.instance.SaveInfo();
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene(tutorial);
     }
 }
