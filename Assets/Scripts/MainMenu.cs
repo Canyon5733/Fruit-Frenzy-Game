@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string firstLevel;
+    public string tutorial;
 
     public int startingLives = 3, startingFruits = 0;
 
@@ -46,5 +47,9 @@ public class MainMenu : MonoBehaviour
     public void ContinueGame()
     {
         SceneManager.LoadScene(PlayerPrefs.GetString("currentLevel"));
+    }
+    public void Tutorial()
+    {
+        SceneManager.LoadScene(tutorial);
     }
 }
