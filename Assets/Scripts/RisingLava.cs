@@ -39,8 +39,6 @@ public class RisingLava : MonoBehaviour
         currentSpeed = riseSpeed;
         baseY = transform.position.y;
         
-        Debug.Log("🔥 RisingLava Start() - Position: " + transform.position);
-        
         // Tự động setup collider với size đã chỉnh
         BoxCollider2D col = GetComponent<BoxCollider2D>();
         if (col != null)
@@ -50,56 +48,13 @@ public class RisingLava : MonoBehaviour
             col.offset = Vector2.zero; // Căn giữa collider
         }
         
-        // Setup visual - tạo mới nếu chưa có
-        SetupVisual();
-    }
-    
-    void SetupVisual()
-    {
-        Transform visual = null;
-        SpriteRenderer sr = null;
-        
-        // Tìm hoặc tạo visual child
+        // Tự động scale và căn giữa visual (child object) nếu có
         if (transform.childCount > 0)
         {
-            visual = transform.GetChild(0);
-            sr = visual.GetComponent<SpriteRenderer>();
+            Transform visual = transform.GetChild(0);
+            visual.localPosition = Vector3.zero; // Căn giữa visual
+            visual.localScale = new Vector3(lavaWidth, lavaHeight, 1f);
         }
-        else
-        {
-            // Tạo visual child mới
-            GameObject visualObj = new GameObject("Lava Visual");
-            visualObj.transform.SetParent(transform);
-            visual = visualObj.transform;
-            Debug.Log("🔥 Đã tạo Lava Visual child");
-        }
-        
-        // Đảm bảo có SpriteRenderer
-        if (sr == null)
-        {
-            sr = visual.gameObject.AddComponent<SpriteRenderer>();
-            Debug.Log("🔥 Đã thêm SpriteRenderer");
-        }
-        
-        // Tạo sprite đơn giản nếu chưa có
-        if (sr.sprite == null)
-        {
-            Texture2D tex = new Texture2D(1, 1);
-            tex.SetPixel(0, 0, Color.white);
-            tex.Apply();
-            sr.sprite = Sprite.Create(tex, new Rect(0, 0, 1, 1), new Vector2(0.5f, 0.5f), 1f);
-            Debug.Log("🔥 Đã tạo sprite cho Lava");
-        }
-        
-        // Set màu lava (cam/đỏ)
-        sr.color = new Color(1f, 0.35f, 0.1f, 0.9f);
-        sr.sortingOrder = 10;
-        
-        // Căn giữa và scale
-        visual.localPosition = Vector3.zero;
-        visual.localScale = new Vector3(lavaWidth, lavaHeight, 1f);
-        
-        Debug.Log("🔥 Lava Visual setup xong! Size: " + lavaWidth + " x " + lavaHeight);
     }
     
     // Kill player khi chạm lava (lần đầu vào)
