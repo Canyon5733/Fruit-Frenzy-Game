@@ -4777,7 +4777,7 @@ SpriteRenderer:
   m_Size: {x: 23.039999, y: 12.959999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &498018479
@@ -5053,7 +5053,7 @@ SpriteRenderer:
   m_Size: {x: 23.039999, y: 12.959999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &628486805
@@ -5431,6 +5431,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5163803
+      objectReference: {fileID: 0}
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Size.y
+      value: 0.17409372
+      objectReference: {fileID: 0}
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.x
+      value: -5.098011
+      objectReference: {fileID: 0}
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.9385915
+      objectReference: {fileID: 0}
     - target: {fileID: 1118415139413933244, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
       propertyPath: m_Name
       value: Enemy - Bird (1)
@@ -5490,6 +5506,18 @@ PrefabInstance:
     - target: {fileID: 4749164686472163096, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230489509923515777, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Radius
+      value: 0.39305115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230489509923515777, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.x
+      value: -4.9649124
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230489509923515777, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.4858685
       objectReference: {fileID: 0}
     - target: {fileID: 6519496676102457757, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5760,7 +5788,7 @@ SpriteRenderer:
   m_Size: {x: 23.039999, y: 12.959999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1280745316
@@ -6685,7 +6713,7 @@ SpriteRenderer:
   m_Size: {x: 23.039999, y: 12.959999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1729052218
@@ -6899,7 +6927,7 @@ SpriteRenderer:
   m_Size: {x: 23.039999, y: 12.959999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1794131169
@@ -7294,6 +7322,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386155940620255388, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3211784
+      objectReference: {fileID: 0}
+    - target: {fileID: 386155940620255388, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.2804005
+      objectReference: {fileID: 0}
+    - target: {fileID: 386155940620255388, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.40641594
+      objectReference: {fileID: 0}
+    - target: {fileID: 386155940620255388, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.97409594
+      objectReference: {fileID: 0}
     - target: {fileID: 1278990478053885595, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.38
@@ -7301,6 +7345,22 @@ PrefabInstance:
     - target: {fileID: 1278990478053885595, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451182283140085463, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8644559
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451182283140085463, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1939784
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451182283140085463, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.37361923
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451182283140085463, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.22784966
       objectReference: {fileID: 0}
     - target: {fileID: 1722217209440528214, guid: 3ed51f6a047049b4a9547e83ec35d9c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7676,6 +7736,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Size.x
+      value: 0.52467346
+      objectReference: {fileID: 0}
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1770482
+      objectReference: {fileID: 0}
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.x
+      value: -2.9249268
+      objectReference: {fileID: 0}
+    - target: {fileID: 315208555548120819, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.83074164
+      objectReference: {fileID: 0}
     - target: {fileID: 1118415139413933244, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
       propertyPath: m_Name
       value: Enemy - Bird
@@ -7743,6 +7819,18 @@ PrefabInstance:
     - target: {fileID: 4749164686472163096, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230489509923515777, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Radius
+      value: 0.38189888
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230489509923515777, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.x
+      value: -2.7660933
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230489509923515777, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.42284846
       objectReference: {fileID: 0}
     - target: {fileID: 6519496676102457757, guid: f29f280d81ea38e43a4e0a50334b6979, type: 3}
       propertyPath: m_LocalPosition.x

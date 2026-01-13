@@ -342,7 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthController
   currentHealth: 3
   maxHealth: 3
-  invincibilityLength: 2
+  invincibilityLength: 0.5
   theSR: {fileID: 182272207433549948}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   fadedColor: {r: 0.91764706, g: 0.69803923, b: 0.69803923, a: 0.87058824}
