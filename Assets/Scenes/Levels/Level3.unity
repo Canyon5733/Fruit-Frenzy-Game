@@ -6523,7 +6523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4576299003801812357, guid: 1b4a9bdadeef6a848921ca4d8a9e86e9, type: 3}
       propertyPath: nextLevel
-      value: BossLevel
+      value: Level4
       objectReference: {fileID: 0}
     - target: {fileID: 5335239389686578073, guid: 1b4a9bdadeef6a848921ca4d8a9e86e9, type: 3}
       propertyPath: m_LocalPosition.x
