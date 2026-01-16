@@ -19,11 +19,13 @@ public class PlayerController : MonoBehaviour
 
     public float knockbackLength, knockbackSpeed;
     private float knockbackCounter;
-
-
     void Start()
     {
-        
+        // QUAN TRỌNG: Freeze rotation để player không bị xoay trên moving platforms
+        if (theRB != null)
+        {
+            theRB.freezeRotation = true;
+        }
     }
 
 
@@ -32,11 +34,6 @@ public class PlayerController : MonoBehaviour
         if (Time.timeScale > 0f)
         {
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
-
-            if (isGrounded)
-            {
-                canDoubleJump = true;
-            }
 
             if (knockbackCounter <= 0)
             {
@@ -101,14 +98,10 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("isKnockingBack");
 
         knockbackCounter = knockbackLength;
-    }    
-
+    }
+    
     public void BouncePlayer(float bounceAmount)
     {
         theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, bounceAmount);
-
-        canDoubleJump = true;
-
-        anim.SetBool("isGrounded", true);
-    }    
+    }
 }
