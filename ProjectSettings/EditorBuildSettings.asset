@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: "Assets/Scenes/Levels/Tu\u1EA5n/Tutorial.unity"
     guid: 328f8de75a718394db44e650daebcde5
   - enabled: 1
-    path: Assets/Scenes/Levels/Level1.unity
+    path: "Assets/Scenes/Levels/\u0110\u0129nh/Level1.unity"
     guid: 48d9da50d6d56a046b257cbfe976117a
   - enabled: 1
-    path: Assets/Scenes/Levels/Level2.unity
+    path: "Assets/Scenes/Levels/\u0110\u0129nh/Level2.unity"
     guid: fa2e0cd6ab0f10543af1cfd80a2cdaaf
   - enabled: 1
-    path: Assets/Scenes/Levels/Level3.unity
+    path: "Assets/Scenes/Levels/\u0110\u0129nh/Level3.unity"
     guid: d2745fe1bc7b345418d22535d2a00422
   - enabled: 1
     path: Assets/Scenes/Levels/Trung/Level4.unity
@@ -27,7 +27,13 @@ EditorBuildSettings:
     path: "Assets/Scenes/Levels/Tu\u1EA5n/Level5.unity"
     guid: de33d644958dab240a438c5145c7918e
   - enabled: 1
-    path: Assets/Scenes/Levels/BossLevel.unity
+    path: "Assets/Scenes/Levels/H\u01B0\u01A1ng/Level6.unity"
+    guid: 8db01efa8a1909a48b6684e44125c899
+  - enabled: 1
+    path: "Assets/Scenes/Levels/H\u01B0\u01A1ng/Level7.unity"
+    guid: a700a8e3e5aca7e4fb9285aa2a9968c2
+  - enabled: 1
+    path: "Assets/Scenes/Levels/\u0110\u0129nh/BossLevel.unity"
     guid: 2edd8be852f3c684084d23b692beb6b3
   - enabled: 1
     path: Assets/Scenes/Victory Screen.unity
