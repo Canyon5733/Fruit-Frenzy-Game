@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
 
+            if (isGrounded)
+            {
+                canDoubleJump = true;
+            }
             if (knockbackCounter <= 0)
             {
                 activeSpeed = moveSpeed;
